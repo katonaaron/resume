@@ -220,6 +220,12 @@
   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
 }
 
+\newcommand{\cvrating}[1]{%
+\foreach \x in {1,...,5}{%
+  \space{\ifnumgreater{\x}{#1}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+}
+
+
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
 \newcommand{\wheelchart}[4][0]{%
     \begingroup\centering
